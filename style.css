@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@font-face {
+  font-family: Muli;
+  src: url(font/Muli.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;800&display=swap");
+:root {
+  --primary-color: #5ebd16;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand {
+  display: inline-block;
+  color: var(--primary-color) !important;
+}
+#login {
+  border: none;
+  background-color: transparent;
+  width: 4.5em;
+  height: 2.8em;
+  font-size: 0.8rem;
+  font-family: "Muli";
+  font-weight: 600;
+}
+#signup {
+  width: 5.3em;
+  height: 2.8em;
+  font-size: 0.8rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-family: "Muli";
+}
+#signup:hover {
+  border: 2px solid rgb(13, 134, 19);
+  background-color: green;
+  transform: scale(1.1);
+}
+.searchbar_head {
+  min-height: 350px;
+  text-align: center;
+  margin-top: 7%;
+}
+.searchbar_head .hungry {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Muli";
+}
+
+.hungrydown {
+  color: rgb(156, 149, 149);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+}
+.img_box {
+  height: 1em;
+  width: 4.5em;
+  margin-right: 30%;
+  border-radius: 5px;
+}
+
+.placename {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0;
+  padding-right: 8px;
+}
+.dropdown_icon {
+  font-size: 1.2rem;
+
+  color: rgb(75, 72, 72);
+}
+.form_main {
+  display: flex !important;
+  flex-direction: row;
+  width: 80%;
+  height: 3em;
+  margin: 30px auto;
+}
+
+.form_main .logo-section {
+  width: 5%;
+  display: grid;
+  place-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.form_main .select_dropdown {
+  width: 25%;
+  display: grid;
+  place-items: center;
+  background-color: #f0f0f0;
+}
+
+.form_main .search {
+  width: 70%;
+}
+.searchbar {
+  height: 100%;
+  position: relative;
+}
+.form_main .search input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dbdbdb;
+  border-left: none;
+  padding-left: 20px;
+}
+.form_main .search .search-icon {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 15px 5px 15px;
+  font-size: 1.2rem;
+}
+
+.select_dropdown {
+  text-align: center;
+  border: 2px solid #f0f0f0;
+}
+
+.select_container {
+  display: inline-block;
+}
+
+.logo-section .icon {
+  color: rgb(0, 0, 0);
+
+  padding: 5px;
+}
+/* secondpart */
+.second_part {
+  /* border: 2px solid red; */
+  min-height: 550px;
+  background-color: rgb(245, 245, 245);
+}
+.answerto {
+  padding-top: 90px;
+}
+.answerto .answerto_1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Muli";
+}
+.answerto_2 {
+  text-align: center;
+  color: #787878;
+  font-family: "Lato", sans-serif;
+}
+.three_row {
+  display: flex;
+  flex-direction: row;
+}
+.row1,
+.row2,
+.row3 {
+  flex: 1;
+  text-align: center;
+}
+
+.row11 {
+  color: var(--primary-color);
+  font-size: 6rem;
+}
+.row12 {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Muli";
+  color: black;
+  font-weight: bold;
+}
+.row13 {
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #787878;
+  font-family: "Lato", sans-serif;
+}
+
+/* thirdpart */
+.third_part {
+  min-height: 300px;
+}
+.google_play {
+  display: flex;
+  flex-direction: row;
+  /* height: 400px; */
+}
+.image_part,
+.google_part {
+  flex: 1;
+}
+.image_part img {
+  width: 70%;
+  height: 90%;
+}
+
+.part_container {
+  margin-top: 9em;
+}
+.get_title {
+  text-align: left;
+  display: block;
+  font-size: 2rem;
+  font-family: "Muli";
+  font-weight: bold;
+}
+.get_text {
+  /* border: 2px solid red; */
+  font-size: 1.1rem;
+  text-align: left;
+  display: block;
+  padding-top: 20px;
+  color: rgb(82, 82, 82);
+}
+.google_searchbar {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+}
+.google_searchbar1 {
+  flex: 1;
+}
+.google_searchbar2 {
+  flex: 1;
+}
+#google_inputtype {
+  width: 24em;
+  height: 2.5em;
+  margin-top: 1em;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(214, 214, 214, 0.3);
+}
+#google_button {
+  height: 2.5em;
+  width: 9em;
+  margin-top: 1em;
+  margin-left: 12px;
+  border: none;
+  color: #fff;
+  background: var(--primary-color);
+}
+.google_logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.storelogo-section,
+.empty-section {
+  margin-top: 15px;
+  flex: 1;
+}
+
+.storelogo-section {
+  display: flex;
+  flex-direction: row;
+}
+.apple_store {
+  flex: 1;
+}
+#apple-logo,
+#google-logo {
+  width: 100%;
+}
+.google_store {
+  flex: 1;
+}
+
+/*          footer       */
+
+footer {
+  height: 30em;
+  padding-top: 5em;
+}
+.footer_logo {
+  display: inline-block;
+  height: 3em;
+}
+.footer_column {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /*width*/
+  grid-auto-rows: minmax(140px, auto); /*height*/
+}
+
+.footer_col1 ul li {
+  list-style: none;
+  line-height: 2em;
+}
+#footer_heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(88, 88, 88);
+}
+.footer_logoline {
+  color: rgb(160, 159, 159);
+  font-size: 0.8rem;
+}
+.footer_column ul li {
+  list-style: none;
+  line-height: 2.1em;
+}
+.footer_col5 ul {
+  padding-top: 5px;
+}
+#apple-footer-logo,
+#google-footer-logo {
+  width: 9em;
+}
+
+.social-logo {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding-left: 12px;
+}
+
+a {
+  color: rgb(90, 88, 88) !important;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none !important;
+}
+h3 {
+  color: var(--primary-color);
+}
+
+/*Media qureis */
+/* Small devices (landscape phones, 576px and up) */
+@media all and (min-width: 300px) and (max-width: 511px) {
+  .three_row {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media all and (min-width: 512px) and (max-width: 991px) {
+  .three_row {
+    flex-direction: column;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .three_row {
+    flex-direction: row;
+  }
+}
