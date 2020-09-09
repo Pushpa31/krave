@@ -317,7 +317,7 @@ footer {
 .footer_column {
   padding-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); /*width*/
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr)); /*width*/
   grid-auto-rows: minmax(140px, auto); /*height*/
 }
 
