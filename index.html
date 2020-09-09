@@ -19,7 +19,7 @@
     <title>Home Page Without Login</title>
   </head>
   <body>
-    <main class="container" >
+    <main class="main-container" >
       <!--navbar section-->
       <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="#">LOGO</a>
@@ -32,7 +32,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
@@ -62,18 +62,20 @@
           </p>
           </div>
           <div class="form_main">
-
-            <div class="logo-section">
-                <i class="fas fa-map-marker-alt"></i>
+            <div class="location">
+              <div class="logo-section">
+                  <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="select_dropdown" >
+                <div class="select_container">
+                  <span class="placename">Dallas ,776000</span>
+                  <span class="dropdown_icon">
+                  <i class="fas fa-caret-down"></i>
+                  </span>
+                </div>               
+              </div>
             </div>
-            <div class="select_dropdown" >
-               <div class="select_container">
-                <span class="placename">Dallas ,776000</span>
-                <span class="dropdown_icon">
-                <i class="fas fa-caret-down"></i>
-                </span>
-               </div>               
-            </div>
+            
             <div class="search">
                 <div class="searchbar">
                     <input type="text" class="search-box" placeholder="Enter Food Name" />                     
@@ -135,7 +137,9 @@
     <div class="third_part">
     <div class="google_play">
         <div class="image_part">
-           <center><img src="img/img4.png" /></center>
+            <div class="image_container">
+            <center><img src="img/img4.png" /></center>
+            </div> 
         </div>
         <div class="google_part" data-aos="fade-up">
           <div class="part_container">
@@ -143,7 +147,7 @@
                  Get the Krave App Today!
                </span>
                <span class="get_text">
-                 Get real-time order updates, live chat support, and exclusive app-only offers,which is available. Download it now!
+                 Get real-time order updates, live chat that support, and exclusive app-only offers,which is available.<span class="download">Download it now!</span> 
                </span>
               <div class="google_searchbar">
                 <div class="google_searchbar1">
@@ -176,7 +180,7 @@
     <footer>
       <div class="footer">
         <div class="footer_logo">
-          <h3>LOGO</h3>
+          <p class="logofooter">LOGO</p>
           <p class="footer_logoline">
             Copyright &copy; 2020 Krave.All rights reserved.
           </p>

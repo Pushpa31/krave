@@ -12,9 +12,21 @@
   margin: 0;
   padding: 0;
 }
+.main-container {
+  width: 75%;
+  margin: 0 auto;
+}
 .navbar-brand {
   display: inline-block;
   color: var(--primary-color) !important;
+}
+.navbar-toggler {
+  outline: none !important;
+}
+.navbar-toggler-icon {
+  width: 20px !important;
+  height: 21px !important;
+  color: rgb(56, 56, 56);
 }
 #login {
   border: none;
@@ -35,15 +47,18 @@
   font-weight: 600;
   font-family: "Muli";
 }
+#login:hover {
+  background-color: rgb(235, 235, 235);
+}
 #signup:hover {
   border: 2px solid rgb(13, 134, 19);
-  background-color: green;
-  transform: scale(1.1);
+  background-color: rgb(7, 124, 7);
 }
 .searchbar_head {
   min-height: 350px;
   text-align: center;
   margin-top: 7%;
+  padding: 10px;
 }
 .searchbar_head .hungry {
   font-size: 3rem;
@@ -63,7 +78,24 @@
   margin-right: 30%;
   border-radius: 5px;
 }
-
+.form_main {
+  display: flex !important;
+  flex-direction: row;
+  width: 80%;
+  height: 3em;
+  margin: 30px auto;
+}
+.location {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.location .logo-section {
+  flex: 1;
+}
+.location .select_dropdown {
+  flex: 4;
+}
 .placename {
   font-size: 1rem;
   display: inline-block;
@@ -72,15 +104,8 @@
 }
 .dropdown_icon {
   font-size: 1.2rem;
-
+  flex: 1;
   color: rgb(75, 72, 72);
-}
-.form_main {
-  display: flex !important;
-  flex-direction: row;
-  width: 80%;
-  height: 3em;
-  margin: 30px auto;
 }
 
 .form_main .logo-section {
@@ -106,7 +131,7 @@
 }
 .form_main .search input {
   width: 100%;
-  height: 100%;
+  height: 3em;
   border: 1px solid #dbdbdb;
   border-left: none;
   padding-left: 20px;
@@ -137,6 +162,7 @@
 /* secondpart */
 .second_part {
   /* border: 2px solid red; */
+  padding: 10px;
   min-height: 550px;
   background-color: rgb(245, 245, 245);
 }
@@ -185,6 +211,7 @@
 
 /* thirdpart */
 .third_part {
+  padding: 10px;
   min-height: 300px;
 }
 .google_play {
@@ -197,15 +224,19 @@
   flex: 1;
 }
 .image_part img {
-  width: 70%;
-  height: 90%;
+  width: 23em;
+  height: 32em;
 }
 
-.part_container {
-  margin-top: 9em;
+.image_container {
+  padding: 10px;
 }
+.google_part {
+  display: grid;
+  place-items: center;
+}
+
 .get_title {
-  text-align: left;
   display: block;
   font-size: 2rem;
   font-family: "Muli";
@@ -214,7 +245,6 @@
 .get_text {
   /* border: 2px solid red; */
   font-size: 1.1rem;
-  text-align: left;
   display: block;
   padding-top: 20px;
   color: rgb(82, 82, 82);
@@ -225,16 +255,16 @@
   /* border: 2px solid red; */
 }
 .google_searchbar1 {
-  flex: 1;
+  flex: 3;
 }
 .google_searchbar2 {
   flex: 1;
 }
 #google_inputtype {
-  width: 24em;
+  width: 100%;
   height: 2.5em;
   margin-top: 1em;
-  padding-left: 15px;
+  padding-left: 5px;
   border: none;
   outline: none;
   background-color: rgba(214, 214, 214, 0.3);
@@ -268,7 +298,7 @@
 }
 #apple-logo,
 #google-logo {
-  width: 100%;
+  width: 9em;
 }
 .google_store {
   flex: 1;
@@ -277,17 +307,17 @@
 /*          footer       */
 
 footer {
+  padding: 10px;
   height: 30em;
-  padding-top: 5em;
+  padding-top: 1em;
 }
 .footer_logo {
   display: inline-block;
-  height: 3em;
 }
 .footer_column {
   padding-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /*width*/
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); /*width*/
   grid-auto-rows: minmax(140px, auto); /*height*/
 }
 
@@ -329,22 +359,188 @@ a {
 a:hover {
   text-decoration: none !important;
 }
-h3 {
+.logofooter {
   color: var(--primary-color);
+  font-size: 2rem;
 }
 
 /*Media qureis */
 /* Small devices (landscape phones, 576px and up) */
 @media all and (min-width: 300px) and (max-width: 511px) {
+  .main-container {
+    width: 100%;
+  }
+  .form_main {
+    flex-direction: column;
+  }
+  .form_main .search {
+    width: 100%;
+    border-left: 1px solid #dbdbdb;
+  }
+  .form_main .select_dropdown {
+    height: 2.5em;
+  }
   .three_row {
     flex-direction: column;
   }
+  .footer_logo {
+    padding-left: 20px;
+  }
+  #login {
+    width: 100%;
+    outline: none;
+  }
+  #signup {
+    width: 100%;
+  }
+
+  .google_play {
+    display: flex;
+    flex-direction: column;
+  }
+  .image_part,
+  .google_part {
+    flex: 1;
+    padding-top: 10%;
+  }
+  .image_part img {
+    width: 15em;
+    height: 20em;
+  }
+  .part_container {
+    margin-top: 0em;
+  }
+  .get_title {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    font-family: "Muli";
+    font-weight: bold;
+  }
+  .get_text {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    color: rgb(82, 82, 82);
+  }
+  #google_inputtype {
+    padding-left: 15px;
+    width: 100%;
+  }
+  .google_searchbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    /* border: 2px solid red; */
+  }
+  #google_button {
+    height: 2.2em;
+    width: 8em;
+    /* font-size: 20px; */
+  }
+  .storelogo-section {
+    display: flex;
+    flex-direction: row;
+  }
+  #apple-logo,
+  #google-logo {
+    width: 7em;
+  }
+
+  .download {
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  footer {
+    height: 30em;
+    padding-top: 2em;
+  }
+
+  .logofooter {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .footer_column {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #footer_heading {
+    font-size: 1rem;
+  }
+  #apple-footer-logo,
+  #google-footer-logo {
+    width: 7em;
+  }
+  .social-logo {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding-left: 12px;
+  }
+  .answerto {
+    padding-top: 20px;
+  }
+  .answerto .answerto_1 {
+    font-size: 1.5rem;
+  }
+  .answerto_2 {
+    font-size: 0.8rem;
+  }
+  .searchbar_head .hungry {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  .hungrydown {
+    font-size: 1.2rem;
+  }
+  .searchbar_head {
+    min-height: 300px;
+  }
+
+  /* end */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media all and (min-width: 512px) and (max-width: 991px) {
+  .main-container {
+    width: 90%;
+  }
+  .placename {
+    font-size: 0.8rem;
+    padding-right: 2px;
+  }
+
+  .dropdown_icon {
+    font-size: 1rem;
+  }
   .three_row {
     flex-direction: column;
+  }
+  .form_main {
+    width: 100%;
+  }
+
+  /*Third part */
+  .image_part img {
+    width: 18em;
+    height: 25em;
+  }
+  .google_searchbar {
+    flex-direction: column;
+  }
+  #google_button {
+    margin-left: 0;
+  }
+  .get_title {
+    font-size: 1.6rem;
+  }
+  .get_text {
+    font-size: 0.9rem;
   }
 }
 
@@ -352,5 +548,21 @@ h3 {
 @media (min-width: 992px) {
   .three_row {
     flex-direction: row;
+  }
+}
+
+/* Others */
+
+@media all and (max-width: 732px) {
+  .google_play {
+    flex-direction: column;
+  }
+  .part_container {
+    width: 90%;
+    text-align: center;
+  }
+  .google_logo {
+    display: grid;
+    place-items: center;
   }
 }
