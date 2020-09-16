@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <title>Homepage_login</title>
+  </head>
+  <body>
+    <main class="main-container">
+        <!-- navbar starts -->
+       <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+          <ul class="navbar-nav ml-auto"  id="nav-ul">
+            <li class="nav-item active" id="help-nav">
+              <a class="nav-link" href="#"> Help</a>
+            </li>
+            <li class="nav-item active"  id="shop-nav">
+             <a href="#" class="after-login" ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+             <path fill-rule="evenodd" d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z"/>
+            </svg></a>
+            </li>
+           
+            <li class="nav-item active" id="bell-nav">
+             <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+            <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+           </svg></a>
+            </li>
+
+            <li class="nav-item active" id="account-nav">
+             <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+             <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+             <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+             <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+             </svg></i></a>
+            </li>
+          
+          </ul>
+        </div>
+      </nav>  
+      <!-- navbar ends -->
+       <!--  searchbar starts  -->
+      <div class="searchbar_head" data-aos="fade-up" >
+          <div class="heading"  >
+          <p class="hungry" >
+              Hungry?
+          </p>
+          <p class="hungrydown" >
+              Your favourite food is one click away,or a few clicks
+          </p>
+          </div>
+          <div class="form_main">
+            <div class="location">
+              <div class="logo-section">
+                  <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="select_dropdown" >
+                <div class="select_container">
+                  <span class="placename">Dallas ,776000</span>
+                  <span class="dropdown_icon">
+                  <i class="fas fa-caret-down"></i>
+                  </span>
+                </div>               
+              </div>
+            </div>
+            
+            <div class="search">
+                <div class="searchbar">
+                    <input type="text" class="search-box" placeholder="Enter Food Name" />                     
+                    <div class="search-icon">
+                	   <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>       
+        </div>
+      </div>
+      <!--     searchbar ends   -->
+      <!-- carousel starts -->
+      <div class="carousel_one"  >
+      <div class="carousel_title" >
+          Trending Today
+      </div>
+   <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" >
+
+  <!--Controls-->
+  <div class="controls-top" >
+    <a class="btn-floating1" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active" >
+
+      <div class="col-md-4" style="float:left" id="single-card">
+       <div class="card mb-2" id="card-image" >
+          <img class="card-img-top"
+            src="img/card-1.jpg" alt="Card image cap" >
+            <i class="fas fa-heart" id="heart"></i>
+          <div class="card-body">
+           <div class="food-titlecard">
+             Black Bean Burgers
+           </div>
+           <span class="food-titlecard-down">
+               Durbar
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add +</button>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card2.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+             <div class="food-titlecard">
+             Crispy Fried Chicken
+           </div>
+           <span class="food-titlecard-down">
+               Trisara
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add +</button>
+          </div>
+          </div>
+        </div>
+      </div>
+   
+       <div class="col-md-4" style="float:left">
+       <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card3.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+             <div class="food-titlecard">
+             Steamed Momo
+           </div>
+           <span class="food-titlecard-down">
+               Bota
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add +</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card2.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+          <div class="food-titlecard">
+             Crispy Fried Chicken
+           </div>
+           <span class="food-titlecard-down">
+               Trisara
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add +</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card-1.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+            <div class="food-titlecard">
+             Black Bean Burgers
+           </div>
+           <span class="food-titlecard-down">
+               Durbar
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add +</button>
+          </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card3.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+             <div class="food-titlecard">
+             Steamed momo
+           </div>
+           <span class="food-titlecard-down">
+               Bota
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast .</li></a>  
+                <a href="#"><li>Salad  .</li></a>  
+                <a href="#"><li>Lunch  .</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add +</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+  </div>
+  <!--/.Slides-->
+
+</div>
+</div>
+    </main>
+    <!-- carousel first ends -->
+    <div class="all-appstore-with" >
+    <div class="appstore-with">
+        <div  class="with-toptitle">
+       <p class="w1">
+           Have you got the app?
+       </p>
+       <p class="w2">
+           There is a lot you can do with the app
+       </p>
+          <div class="storelogo-section1" >
+                  <div class="apple_store" > 
+                   <img src="img/gg.png" id="apple-logo"/>
+                   </div>
+                   <div class="google_store">
+                   <img src="img/go.png" id="google-logo"/>
+                     
+                   </div>
+                </div>
+        </div>
+        <div class="with-topimage">
+          <img src="img/krave.png" />
+        </div>
+    </div>
+    </div>
+  
+        <main class="main-container">
+            
+      <!--  second   carousel starts -->
+      <div class="second-carouselwith" >
+      <div class="carousel_two" >
+      <div class="carousel_title" >
+          Featured Resturants
+      </div>
+   <div id="multi-item-example-one" class="carousel slide carousel-multi-item" data-ride="carousel" >
+
+  <!--Controls-->
+  <div class="controls-top-one" >
+    <a class="btn-floating2" href="#multi-item-example-one" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating3" href="#multi-item-example-one" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-4" style="float:left" id="single-card">
+       <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/rest2.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+           <div class="food-titlecard">
+             Cafe De Mug
+           </div>
+         
+          <span class="food-time" > 
+              <ul id="ul-top2">
+                  <a href="#"><li> <i class="far fa-comment"></i>  3.5(90) | Cafe</li></a>
+                  <li>
+                Jakson Height, Dillibazar
+                  </li>
+              </ul>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/rest1.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+             <div class="food-titlecard">
+             Durbar
+           </div>
+          
+         <span class="food-time" > 
+              <ul id="ul-top2">
+                  <a href="#"><li> <i class="far fa-comment"></i>  3.5(90) | Cafe</li></a>
+                  <li>
+                Jakson Height, Dillibazar
+                  </li>
+              </ul>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+   
+       <div class="col-md-4" style="float:left">
+       <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/rest3.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+             <div class="food-titlecard">
+             Trisara
+           </div>
+        
+          <span class="food-time" > 
+              <ul id="ul-top2">
+                  <a href="#"><li> <i class="far fa-comment"></i>  3.5(90) | Cafe</li></a>
+                  <li>
+                Jakson Height, Dillibazar
+                  </li>
+              </ul>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card2.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+          <div class="food-titlecard">
+             Durbar
+           </div>
+          
+         <span class="food-time" > 
+              <ul id="ul-top2">
+                  <a href="#"><li> <i class="far fa-comment"></i>  3.5(90) | Cafe</li></a>
+                  <li>
+                Jakson Height, Dillibazar
+                  </li>
+              </ul>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card-1.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+            <div class="food-titlecard">
+             Cafe De Patan
+           </div>
+          
+         <span class="food-time" > 
+              <ul id="ul-top2">
+                  <a href="#"><li> <i class="far fa-comment"></i>  3.5(90) | Cafe</li></a>
+                  <li>
+                Jakson Height, Dillibazar
+                  </li>
+              </ul>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card3.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+            
+          <div class="card-body">
+             <div class="food-titlecard">
+             Durbar
+           </div>
+        
+         <span class="food-time" > 
+              <ul id="ul-top2">
+                  <a href="#"><li> <i class="far fa-comment"></i>  3.5(90) | Cafe</li></a>
+                  <li>
+                Jakson Height, Dillibazar
+                  </li>
+              </ul>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast .</li></a>  
+                <a href="#"><li>Salad  .</li></a>  
+                <a href="#"><li>Lunch  .</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+  </div>
+  <!--/.Slides-->
+
+</div>
+</div>
+</div>
+
+      <!-- carousel ends -->
+      <!--third carousel-->
+      <div class="third-carouselwith" >
+       <div class="carousel_three" >
+      <div class="carousel_title" >
+          Explore Cuisenes
+      </div>
+   <div id="multi-item-example-two" class="carousel slide carousel-multi-item" data-ride="carousel" >
+
+  <!--Controls-->
+  <div class="controls-top-one" >
+    <a class="btn-floating2" href="#multi-item-example-two" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating3" href="#multi-item-example-two" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-3" style="float:left" id="single-card">
+       <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/italian.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+           <div class="food-titlecard">
+            <center> Italian</center>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/thai.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+          <div class="card-body">
+             <div class="food-titlecard">
+           <center>Thai</center>  
+           </div>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/american.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+           <div class="card-body">
+             <div class="food-titlecard">
+            <center>American</center> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-3" style="float:left">
+       <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/korean.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+            <div class="card-body">
+             <div class="food-titlecard">
+            <center>Korean</center> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/korean.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+          <div class="food-titlecard">
+            <center>Korean</center> 
+           </div>
+          
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/japanese.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+            <div class="food-titlecard">
+             <center>Japanese</center>
+           </div>
+          
+         
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/chinese.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+             <div class="food-titlecard">
+             <center>Chinese</center>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2" id="card3-image">
+          <img class="card-img-top1"
+            src="img/indian.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+            <div class="card-body">
+             <div class="food-titlecard">
+             <center>Indian</center>
+             </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Second slide-->
+  </div>
+  <!--/.Slides-->
+</div>
+</div>
+</div>
+      <!---carousel ends-->
+      <!-- last carousel starts -->
+       <div class="carousel_one"  >
+      <div class="carousel_title"  >
+          Best in Chinese!
+      </div>
+   <div id="multi-item-example-three" class="carousel slide carousel-multi-item" data-ride="carousel" >
+
+  <!--Controls-->
+  <div class="controls-top" >
+    <a class="btn-floating1" href="#multi-item-example-three" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example-three" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-4" style="float:left" id="single-card">
+       <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card-1.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+           <div class="food-titlecard">
+             Black Bean Burgers
+           </div>
+           <span class="food-titlecard-down">
+               Durbar
+           </span>
+          <span class="food-time" > 
+          <ul id="ul-top">
+              <a href="#"><li>$4.50   |</li></a>
+              <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+              <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+          </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card2.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+          <div class="card-body">
+             <div class="food-titlecard">
+             Crispy Fried Chicken
+           </div>
+           <span class="food-titlecard-down">
+               Trisara
+           </span>
+          <span class="food-time" > 
+          <ul id="ul-top">
+              <a href="#"><li>$4.50   |</li></a>
+              <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+              <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+          </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+   
+       <div class="col-md-4" style="float:left">
+       <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card3.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+             <div class="food-titlecard">
+             Steamed Momo
+           </div>
+           <span class="food-titlecard-down">
+               Bota
+           </span>
+          <span class="food-time" > 
+          <ul id="ul-top">
+              <a href="#"><li>$4.50   |</li></a>
+              <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+              <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+          </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card2.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+          <div class="food-titlecard">
+             Crispy Fried Chicken
+           </div>
+           <span class="food-titlecard-down">
+               Trisara
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card-1.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+
+          <div class="card-body">
+            <div class="food-titlecard">
+             Black Bean Burgers
+           </div>
+           <span class="food-titlecard-down">
+               Durbar
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast &#183;</li></a>  
+                <a href="#"><li>Salad  &#183;</li></a>  
+                <a href="#"><li>Lunch  &#183;</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2" id="card-image">
+          <img class="card-img-top"
+            src="img/card3.jpg" alt="Card image cap">
+            <i class="fas fa-heart" id="heart"></i>
+            
+          <div class="card-body">
+             <div class="food-titlecard">
+             Steamed momo
+           </div>
+           <span class="food-titlecard-down">
+               Bota
+           </span>
+          <span class="food-time" > 
+              <ul id="ul-top">
+                  <a href="#"><li>$4.50   |</li></a>
+                  <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                  <a href="#"><li><i class="far fa-comment"></i>  3.5</li></a>
+              </ul>
+               <hr/>
+          </span>
+          <span class="food-timedown" >
+              <ul id="ul-down">
+                <a href="#"><li>American  &#183;</li></a>  
+                <a href="#"><li>Breakfast .</li></a>  
+                <a href="#"><li>Salad  .</li></a>  
+                <a href="#"><li>Lunch  .</li></a>  
+                <a href="#"><li>Dinner </li></a>  
+              </ul>
+          </span>
+          <div class="carousel-addbutton">
+              <button id="carousel-button">Add </button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+  </div>
+  <!--/.Slides-->
+
+</div>
+</div>
+      <!-- last carousel ends -->
+
+       <!-- footer -->
+       <footer>
+      <div class="footer">
+        <div class="footer_logo">
+          <p class="logofooter">LOGO</p>
+          <p class="footer_logoline">
+            Copyright &copy; 2020 Krave.All rights reserved.
+          </p>
+        </div>
+        <hr/>
+        <div class="footer_column">
+          <div class="footer_col1">
+            <ul>
+            <li id="footer_heading">Company</li></a>
+            <a href="#" ><li>About</li></a> 
+             <a href="#"> <li>Team</li></a>
+             <a href="#"><li>Branding</li></a> 
+             <a href="#"> <li>Visit</li></a>
+            </ul>
+
+          </div>
+           <div class="footer_col2">
+             <ul>
+            <li id="footer_heading">For Resturants</li></a>
+            <a href="#" ><li>About</li></a> 
+             <a href="#"> <li>Team</li></a>
+             <a href="#"><li>Branding</li></a> 
+             <a href="#"> <li>Visit</li></a>
+            </ul>
+            
+          </div>
+           <div class="footer_col3">
+             <ul>
+            <li id="footer_heading">For Foodies</li></a>
+            <a href="#" ><li>About</li></a> 
+             <a href="#"> <li>Team</li></a>
+             <a href="#"><li>Branding</li></a> 
+             <a href="#"> <li>Visit</li></a>
+            </ul>
+            
+          </div>
+           <div class="footer_col4">
+             <ul>
+            <li id="footer_heading">Legal</li></a>
+            <a href="#" ><li>About</li></a> 
+             <a href="#"> <li>Team</li></a>
+             <a href="#"><li>Branding</li></a> 
+             <a href="#"> <li>Visit</li></a>
+            </ul>
+            
+          </div>
+           <div class="footer_col5">
+            <ul>
+              <a href="#" ><li><img src="img/gg.png" id="apple-footer-logo"></li></a> 
+              <a href="#"> <li><img src="img/go.png" id="google-footer-logo"></li></li></a>
+              <a href="#"><li class="social-logo"><i class="fab fa-facebook"></i></li></a>
+              <a href="#"><li class="social-logo"><i class="fab fa-twitter"></i></li></a>
+              <a href="#"><li class="social-logo"><i class="fab fa-instagram"></i></li></a>
+
+            </ul>            
+          </div>
+        </div>
+
+      </div>
+    </footer>
+       <!-- footer ends -->
+    </main>
+    <!-- ends -->
+    <script>
+      AOS.init({
+        duration: 1400,
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
