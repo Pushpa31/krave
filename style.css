@@ -675,6 +675,7 @@ ul.breadcrumb li a {
 /* resturant page */
 .rest-main {
   display: flex;
+  flex-direction: row;
 }
 .rest-img {
   flex: 1;
@@ -696,6 +697,9 @@ ul.breadcrumb li a {
   display: inline-block;
   flex: 1;
   border-right: 2px solid rgb(207, 207, 207);
+}
+.rest-ratingmid {
+  font-size: 1.1rem;
 }
 .rest-rating1 {
   font-size: 1.1rem;
@@ -858,7 +862,6 @@ ul.breadcrumb li a {
 }
 .rest-sideimg {
   flex: 1;
-
   position: relative;
 }
 .rest-pdown #rest-midul li {
@@ -1133,10 +1136,7 @@ ul.breadcrumb li a {
   .all-appstore-with {
     height: 28em;
   }
-  /* .carousel_title {
-  font-size: 1.5rem;
-  text-align: left;
-} */
+
   .food-titlecard {
     font-size: 1.4rem;
   }
@@ -1170,7 +1170,145 @@ ul.breadcrumb li a {
     font-size: 1.7rem;
     margin-left: 16px;
   }
-  /* end */
+  .rest-main {
+    display: flex;
+    flex-direction: column;
+  }
+  #restimg {
+    width: 18em;
+    padding-left: 15px;
+  }
+  .food-titlerest {
+    font-size: 1.2em;
+  }
+  .rest-detail {
+    padding: 16px;
+  }
+  .rest-address {
+    font-size: 0.9rem;
+  }
+  .rest-address a {
+    font-size: 0.6rem;
+  }
+  .food-timedownrest {
+    font-size: 0.77rem;
+  }
+  .rest-number {
+    width: 19em;
+    height: 11em;
+    flex-direction: column;
+  }
+  .rest-rating1 {
+    font-size: 0.9rem;
+  }
+  .rest-rating2 {
+    font-size: 0.8rem;
+  }
+  .rest-ratingmid {
+    font-size: 0.9rem;
+  }
+  .rest-timing1 {
+    font-size: 0.9rem;
+  }
+  .rest-rating {
+    border-bottom: 1px solid rgb(241, 241, 241);
+    border-right: 0;
+  }
+  .rest-timing {
+    border-bottom: 1px solid rgb(241, 241, 241);
+    margin-left: 0;
+    border-right: 0;
+  }
+  .rest-amountoftime {
+    margin-left: 0px;
+  }
+  .rest-fav {
+    padding-top: 0px;
+  }
+  #rest-button {
+    width: 93px;
+    height: 36px;
+    font-size: 15px;
+  }
+  .rest-stars {
+    margin-left: 10px;
+    font-size: 0.8rem;
+  }
+  .rest-searchbar {
+    width: 19em;
+  }
+  .rest-searchbox {
+    width: 17.5em;
+    height: 2.4em;
+  }
+  .rest-search {
+    height: 6em;
+  }
+  #se-icon {
+    font-size: 1rem;
+    left: 85%;
+  }
+  .rest-mainbody {
+    min-height: 170em;
+  }
+  .rest-main1 {
+    flex-direction: column;
+  }
+  #rest-ul {
+    text-align: center;
+    border: none;
+    /* border-right: 5px solid rgb(204, 204, 204); */
+  }
+  #rest-ul li {
+    display: inline;
+    padding: 7px;
+  }
+  #rest-ul li.active {
+    font-weight: bolder;
+    border-right: none;
+    color: green;
+  }
+  .breakfast .rest-heading {
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: "Muli";
+  }
+  .breakfast .rest-breakdown {
+    text-align: center;
+    display: block;
+  }
+  .restmiddle-title {
+    font-size: 1.4rem;
+  }
+  .rest-p1 {
+    width: 23em;
+    font-size: 0.75rem;
+  }
+  .rest-food {
+    flex-direction: column;
+    padding-top: 31px;
+  }
+  #rest-midul {
+    font-size: 0.7rem;
+  }
+  .rest-pdown {
+    display: inline-block;
+    border: none;
+  }
+  .rest-sideimg img {
+    width: 100%;
+  }
+  .cart-title {
+    font-size: 1.9rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  .breakfast {
+    height: 163em;
+  }
+  .cart {
+    padding-left: 18px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media all and (min-width: 512px) and (max-width: 991px) {
