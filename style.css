@@ -1147,7 +1147,7 @@ ul.breadcrumb li a {
     font-size: 0.8rem;
   }
   #ul-down {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   #card3-image img {
     height: 17em;
@@ -1175,17 +1175,17 @@ ul.breadcrumb li a {
     flex-direction: column;
   }
   #restimg {
-    width: 18em;
-    padding-left: 15px;
+    width: 24em;
+    padding-left: 26px;
   }
   .food-titlerest {
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
   .rest-detail {
-    padding: 16px;
+    padding: 25px;
   }
   .rest-address {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .rest-address a {
     font-size: 0.6rem;
@@ -1199,7 +1199,7 @@ ul.breadcrumb li a {
     flex-direction: column;
   }
   .rest-rating1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .rest-rating2 {
     font-size: 0.8rem;
@@ -1236,10 +1236,11 @@ ul.breadcrumb li a {
   }
   .rest-searchbar {
     width: 19em;
+    margin-right: 10px;
   }
   .rest-searchbox {
-    width: 17.5em;
-    height: 2.4em;
+    width: 18.5em;
+    height: 2.7em;
   }
   .rest-search {
     height: 6em;
@@ -1249,6 +1250,7 @@ ul.breadcrumb li a {
     left: 85%;
   }
   .rest-mainbody {
+    height: unset;
     min-height: 170em;
   }
   .rest-main1 {
@@ -1257,6 +1259,7 @@ ul.breadcrumb li a {
   #rest-ul {
     text-align: center;
     border: none;
+    font-size: 1.1rem;
     /* border-right: 5px solid rgb(204, 204, 204); */
   }
   #rest-ul li {
@@ -1282,7 +1285,7 @@ ul.breadcrumb li a {
   }
   .rest-p1 {
     width: 23em;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .rest-food {
     flex-direction: column;
@@ -1303,11 +1306,10 @@ ul.breadcrumb li a {
     text-align: center;
     padding-left: 0;
   }
-  .breakfast {
-    height: 163em;
-  }
+
   .cart {
-    padding-left: 18px;
+    min-height: 460px;
+    padding: 20px;
   }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -1328,6 +1330,11 @@ ul.breadcrumb li a {
   }
   .form_main {
     width: 100%;
+  }
+
+  .rest-mainbody {
+    height: unset;
+    min-height: 90em;
   }
 
   /*Third part */
