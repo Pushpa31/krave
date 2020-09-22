@@ -12,6 +12,10 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  overflow-x: hidden;
+}
 .main-container {
   width: 75%;
   margin: 0 auto;
@@ -74,11 +78,33 @@
   padding-top: 5px;
 }
 #login:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: transparent;
+  border: none;
 }
 #signup:hover {
   border: 2px solid rgb(13, 134, 19);
   background-color: rgb(7, 124, 7);
+}
+#cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(37, 124, 59);
+  transition: width 0.3s;
+}
+div.resturant {
+  /* height: 33em; */
+  top: 0;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  background-color: white;
+  padding: 20px;
+}
+#cool-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 .searchbar_head {
   min-height: 350px;
@@ -415,25 +441,38 @@ a:hover {
   /* border: 2px solid red; */
   padding: 5px;
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 .controls-top a {
-  border: 1px solid rgb(204, 204, 204);
   font-size: 1.6rem;
   color: #787878;
-  border-radius: 20%;
   padding-left: 5px;
+  font-weight: bold;
 }
 .controls-top-one {
   float: right;
   /* border: 2px solid red; */
   padding: 5px;
   margin-right: 15px;
+  margin-bottom: 10px;
 }
-.controls-top-one a {
-  border: 1px solid rgb(204, 204, 204);
+.controls-top-cui {
+  float: right;
+  /* border: 2px solid red; */
+  padding: 5px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  /* border: 2px solid red; */
+}
+.controls-top-cui a {
   font-size: 1.6rem;
   color: #787878;
-  border-radius: 20%;
+  /* border: 2px solid red; */
+  padding-left: 5px;
+}
+.controls-top-one a {
+  font-size: 1.6rem;
+  color: #787878;
   padding-left: 5px;
 }
 #card-image img {
@@ -441,6 +480,9 @@ a:hover {
 }
 #card3-image img {
   height: 15em;
+}
+#card3-image {
+  border: none;
 }
 
 #card-body {
@@ -583,7 +625,13 @@ a:hover {
 }
 /* third carousel */
 .third-carouselwith {
-  height: 35em;
+  height: 34em;
+  /* border: 2px solid red; */
+}
+.carousel_three {
+  min-height: 30em;
+  /* border: 2px solid red; */
+  margin-top: 70px;
 }
 .card-img-top {
   position: relative;
@@ -674,6 +722,7 @@ ul.breadcrumb li a {
 
 /* resturant page */
 .rest-main {
+  flex: 4;
   display: flex;
   flex-direction: row;
 }
@@ -740,6 +789,7 @@ ul.breadcrumb li a {
 .rest-amountoftime {
   flex: 2;
   margin-left: 15px;
+  display: inline-block;
 }
 #rest-button {
   width: 8.3em;
@@ -767,9 +817,18 @@ ul.breadcrumb li a {
   margin-top: 5%;
   width: 40em;
 }
+
+/* .rest-search {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+  /* border: 1px solid black; */
+/* } */
 .rest-searchbox {
   width: 28em;
   height: 2.9em;
+  /* border: 1px solid black; */
 }
 #se-icon {
   font-size: 1.1rem;
@@ -779,12 +838,12 @@ ul.breadcrumb li a {
 }
 .rest-search {
   text-align: center;
-  height: 10em;
+  flex: 1;
 }
 
 /* rest-main */
 .rest-mainbody {
-  height: 90em;
+  height: 82em;
 }
 .rest-main1 {
   display: flex;
@@ -811,6 +870,8 @@ ul.breadcrumb li a {
   border-right: 5px solid rgb(204, 204, 204);
   padding-bottom: 20px;
   margin-top: 17px;
+  position: sticky;
+  top: 38%;
 }
 #rest-ul li {
   margin-bottom: 15px;
@@ -835,7 +896,7 @@ ul.breadcrumb li a {
 .rest-foods {
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 90%;
   padding-top: 20px;
 }
 .rest-foods .rest-food {
@@ -888,10 +949,15 @@ ul.breadcrumb li a {
 }
 .cart {
   flex: 2;
+  height: 100%;
+}
+.cart-container {
   display: flex;
   flex-direction: column;
-  height: 30%;
+  height: 27%;
   border-right: 1px solid rgb(228, 228, 228);
+  position: sticky;
+  top: 38%;
 }
 .cart-1 {
   flex: 11;
@@ -992,6 +1058,9 @@ ul.breadcrumb li a {
   .google_play {
     display: flex;
     flex-direction: column;
+  }
+  div.resturant {
+    margin-left: 0px !important;
   }
   .image_part,
   .google_part {
@@ -1120,13 +1189,14 @@ ul.breadcrumb li a {
     margin-top: -1%;
     margin-left: 8%;
   }
+  .carousel_three {
+    margin-top: 0;
+  }
 
   .carousel_two {
     min-height: 35em;
   }
-  .carousel_three {
-    min-height: 35em;
-  }
+
   .third-carouselwith {
     height: 103em;
   }
@@ -1241,6 +1311,10 @@ ul.breadcrumb li a {
   .rest-searchbox {
     width: 18.5em;
     height: 2.7em;
+  }
+
+  input {
+    padding-left: 15px;
   }
   .rest-search {
     height: 6em;
