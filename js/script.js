@@ -19,6 +19,7 @@ function scrollFunction() {
     document.getElementById("ul-down").style.fontSize = "0.8em";
     document.querySelector(".rest-searchbox").style.border = "1px solid white";
     document.querySelector(".rest-searchbox").style.borderRadius = "25px";
+    document.querySelector(".rest-searchbox").style.outline = "none";
 
     document.getElementById("rest-searchbar").style.marginTop = "1.5em";
 
@@ -45,6 +46,7 @@ function scrollFunction() {
     document.getElementById("rest-detail").style.paddingTop = "20px";
     document.getElementById("rest-number").style.display = "flex";
     document.querySelector(".rest-mainbody").style.paddingTop = "0px";
+    document.querySelector(".rest-searchbox").style.outline = "none";
 
     // document.getElementById("resturantid").style.backgroundColor = "white";
   }
