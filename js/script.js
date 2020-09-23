@@ -20,10 +20,10 @@ function scrollFunction() {
     document.querySelector(".rest-searchbox").style.border = "1px solid white";
     document.querySelector(".rest-searchbox").style.borderRadius = "25px";
     document.querySelector(".rest-searchbox").style.outline = "none";
-
     document.getElementById("rest-searchbar").style.marginTop = "1.5em";
-
     document.querySelector(".rest-mainbody").style.paddingTop = "20px";
+    document.querySelector(".cart-container").style.height = "32%";
+    document.querySelector(".cart-container").style.top = "40%";
 
     // document.getElementById("resturantid").style.backgroundColor = "black";
     document.getElementById("f-title").style.fontSize = "1.3em";
