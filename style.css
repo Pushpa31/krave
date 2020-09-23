@@ -734,7 +734,7 @@ ul.breadcrumb li a {
 }
 .rest-detail {
   flex: 1;
-  padding-left: 20px;
+  padding-left: 46px;
   padding-top: 20px;
 }
 .rest-number {
@@ -862,6 +862,7 @@ ul.breadcrumb li a {
 }
 .breakfast {
   flex: 4;
+  padding-top: 31px;
 }
 
 #rest-ul {
@@ -869,7 +870,7 @@ ul.breadcrumb li a {
   text-align: right;
   border-right: 5px solid rgb(204, 204, 204);
   padding-bottom: 20px;
-  margin-top: 17px;
+  margin-top: 40px;
   position: sticky;
   top: 38%;
 }
