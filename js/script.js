@@ -12,7 +12,8 @@ function scrollFunction() {
     document.getElementById("resturantid").style.height = "13.5em";
     document.getElementById("resturantid").style.width = "100vw";
     document.getElementById("resturantid").style.marginLeft = "-190px";
-    document.getElementById("resturantid").style.backgroundColor = "#c8e6dd";
+    document.getElementById("resturantid").style.backgroundColor =
+      "rgb(200,230,221)";
     document.getElementById("rest-detail").style.paddingTop = "0em";
     document.getElementById("rest-fav").style.paddingTop = "0em";
     document.getElementById("rest-address").style.fontSize = "1em";
@@ -26,7 +27,7 @@ function scrollFunction() {
     document.getElementById("rest-searchbar").style.marginTop = "1.5em";
     document.querySelector(".rest-mainbody").style.paddingTop = "20px";
     document.querySelector(".cart-container").style.height = "32%";
-    document.querySelector(".cart-container").style.top = "40%";
+    document.querySelector(".cart-container").style.top = "35%";
     document.querySelector(".rest-stars").style.fontSize = "0.8rem";
     document.querySelector(".rest-stars").style.color = "yellow";
     document.getElementById("rest-detail").style.paddingLeft = "0px";
