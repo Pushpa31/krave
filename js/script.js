@@ -39,7 +39,7 @@ function scrollFunction() {
   } else {
     document.getElementById("rest-searchbar").style.marginTop = "5%";
     document.querySelector(".rest-searchbox").style.border = "1px solid black";
-    document.querySelector(".rest-searchbox").style.borderRadius = "0px";
+    document.querySelector(".rest-searchbox").style.borderRadius = "25px";
     document.getElementById("restimg").style.marginLeft = "unset";
     document.getElementById("restimg").style.width = "32em";
     document.getElementById("resturantid").style.width = "100%";

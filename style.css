@@ -40,6 +40,7 @@ body {
   font-size: 0.8rem;
   font-family: "Muli";
   font-weight: 600;
+  outline: none;
 }
 #signup {
   width: 5.3em;
@@ -50,6 +51,7 @@ body {
   border: none;
   font-weight: 600;
   font-family: "Muli";
+  outline: none;
 }
 #afterlogin-icons {
   margin-top: 10px;
@@ -828,6 +830,8 @@ ul.breadcrumb li a {
 .rest-searchbox {
   width: 28em;
   height: 2.9em;
+  padding-left: 20px;
+
   /* border: 1px solid black; */
 }
 #se-icon {
@@ -873,6 +877,8 @@ ul.breadcrumb li a {
   margin-top: 40px;
   position: sticky;
   top: 38%;
+  display: inline-block;
+  margin-left: 44px;
 }
 #rest-ul li {
   margin-bottom: 15px;
