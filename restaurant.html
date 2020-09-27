@@ -8,6 +8,7 @@
   <body>
        <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="tabs.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,7 +22,7 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="js/script.js"></script>
+
     <title>Search Button</title>
   </head>
   <body>
@@ -158,28 +159,315 @@
             </div>    
       <!--     searchbar ends   -->
       <!-- main box -->
-      <div class="rest-mainbody">
+      <div class="rest-mainbody" id="rest-mainbody">
             <div class="rest-main1">
                 <div class="progressbar" >
-                      <ul id="rest-ul" >
-                          <li class="active" id="cool-link">Breakfast</li>
-                          <li id="cool-link">Lunch</li>
-                          <li id="cool-link">Dinner</li>
-                          <li id="cool-link">Dessert</li>
-                          <li id="cool-link">Briyani</li>
-                          <li id="cool-link">Al D lato</li>
-                          <li id="cool-link">Drinks</li>
-                          <li id="cool-link">Rice Bowls</li>
+                     <div class="tabs" style="position: sticky; top:30%;">                                           
+                          <ul class="tab-header" id="rest-ul" >
+                          <li class="active">Breakfast</li>
+                          <li>Lunch</li>
+                          <li>Dinner</li>
+                          <li>Dessert</li>
+                          <li>Brunch</li>
+                          <li>Snacks</li>
+                          <li>Drinks</li>
+                          <li>Rice Bowls</li>
+                          </div>
                           
-                      </ul>
+                      </ul>            
                 </div>
                 <div class="breakfast" id="breakfast" >
-                  <span class="rest-heading">Breakfast</span>
-                  <span class="rest-breakdown">
-                    12 Items
-                  </span>
-                  <div class="rest-foods">
-                       <div class="rest-food">
+                  
+                  <div class="rest-foods" style="position: relative;">
+                      <div class="tab-indicator"></div>
+                          <div class="tab-body">
+                            <section class="active">
+                           <span class="rest-heading">Breakfast</span>
+                            <span class="rest-breakdown">
+                              12 Items
+                            </span>
+                            <div class="toprest-food">
+                          <div class="rest-food">
+                         <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                            Full Omelette Pizza
+                         </span>
+                         <p class="rest-p1">
+                           Full Omelette Pizza is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/toast.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+
+                       </div>
+                        <div class="rest-food">
+                               <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                           French Toast & Coffee
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/omlette.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>  
+                       </div>
+                        <div class="rest-food">
+                                 <span class="rest-sidepart">
+                         <span class="restmiddle-title">
+                            Chicken Tikka Masala
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/toast.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+                       </div>
+                        <div class="rest-food">
+                                 <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                            Chicken Tikka Masala
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/omlette.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+                       </div>
+                        <div class="rest-food">
+                                 <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                            Chicken Tikka Masala
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/toast.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+                       </div> 
+                      </div>
+            
+                            </section>
+                            <section>
+                                <span class="rest-heading">Lunch</span>
+                            <span class="rest-breakdown">
+                              12 Items
+                            </span>
+                            <div class="toprest-food">
+                          <div class="rest-food">
+                         <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                            Burger
+                         </span>
+                         <p class="rest-p1">
+                           Full Omelette Pizza is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/menu-bur.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+
+                       </div>
+                        <div class="rest-food">
+                               <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                           Chicken Wings
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/menu-chi.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>  
+                       </div>
+                        <div class="rest-food">
+                                 <span class="rest-sidepart">
+                         <span class="restmiddle-title">
+                            Chicken Tikka Masala
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/omlette.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+                       </div>
+                        <div class="rest-food">
+                                 <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                            Chicken Tikka Masala
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/omlette.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+                       </div>
+                        <div class="rest-food">
+                                 <span class="rest-sidepart" >
+                         <span class="restmiddle-title">
+                            Chicken Tikka Masala
+                         </span>
+                         <p class="rest-p1">
+                           Chicken tikka masala is a dish of chunks of roasted marinated chicken (chicken tikka) in a spiced curry. Its origin is disputed. The curry is usually creamy and orange-coloured. 
+                         </p>
+                          <span class="rest-pdown" > 
+                            <ul id="rest-midul">
+                            <a href="#"><li>$4.50   |</li></a>
+                            <a href="#"><li><i class="far fa-clock"></i> 20-30 min   |</li></a>
+                            <a href="#"><li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>  3.5 </a></li>
+                           </ul>
+                          </span>
+                        </span>
+                         <span class="rest-sideimg">
+                          <img src="img/omlette.png" alt="chicken tikka masala"/>
+                          <button id="img-top">
+                            Add
+                          </button>
+                         </span>
+                       </div> 
+                      </div>
+            
+                            </section>
+                            <section>
+                                <span class="rest-heading">Dinner</span>
+                            <span class="rest-breakdown">
+                              12 Items
+                            </span>
+                            <div class="toprest-food">
+                          <div class="rest-food">
                          <span class="rest-sidepart" >
                          <span class="restmiddle-title">
                             Full Omelette Pizza
@@ -310,7 +598,32 @@
                           </button>
                          </span>
                        </div> 
-                  </div>
+                      </div>
+            
+                            </section>
+                            <section>
+                              <h2>Dessert</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                            </section>
+                             <section>
+                              <h2>Brunch</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                            </section>
+                             <section>
+                              <h2>Snacks</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                            </section>
+                             <section>
+                              <h2>Drinks</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                            </section>
+                             <section>
+                              <h2>Rice Bowls</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                            </section>
+                          </div>
+                        </div>
+                       
                 </div>
                 <div class="cart" >
                   <div class="cart-container" >
@@ -433,7 +746,7 @@
     </footer>
        <!-- footer ends -->
       </main>
-     
+    <script src="js/script.js"></script>
     <script>
       AOS.init({
         duration: 1400,

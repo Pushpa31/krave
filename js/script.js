@@ -1,3 +1,17 @@
+let tabHeader = document.getElementsByClassName("tab-header")[0];
+let tabBody = document.getElementsByClassName("tab-body")[0];
+
+let tabsPane = tabHeader.getElementsByTagName("li"); //list haru array ma thuparna//
+
+for (let i = 0; i < tabsPane.length; i++) {
+  tabsPane[i].addEventListener("click", function () {
+    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+    tabsPane[i].classList.add("active");
+    tabBody.getElementsByClassName("active")[0].classList.remove("active");
+    tabBody.getElementsByTagName("section")[i].classList.add("active");
+  });
+}
+
 window.onscroll = function () {
   scrollFunction();
 };
@@ -27,7 +41,7 @@ function scrollFunction() {
     document.querySelector(".rest-searchbox").style.outline = "none";
     document.getElementById("rest-searchbar").style.marginTop = "1.5em";
     document.querySelector(".rest-mainbody").style.paddingTop = "20px";
-    document.querySelector(".cart-container").style.height = "32%";
+    document.querySelector(".cart-container").style.height = "36%";
     document.querySelector(".cart-container").style.top = "35%";
     document.querySelector(".rest-stars").style.fontSize = "0.8rem";
     document.querySelector(".rest-stars").style.color = "yellow";

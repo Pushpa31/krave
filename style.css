@@ -866,7 +866,7 @@ ul.breadcrumb li a {
 }
 .breakfast {
   flex: 4;
-  padding-top: 31px;
+  padding-top: 0px;
 }
 
 #rest-ul {
@@ -879,6 +879,7 @@ ul.breadcrumb li a {
   top: 38%;
   display: inline-block;
   margin-left: 44px;
+  width: 110px;
 }
 #rest-ul li {
   margin-bottom: 15px;
@@ -886,6 +887,7 @@ ul.breadcrumb li a {
   margin-right: -5px;
   padding-bottom: 1px;
   font-family: "Muli";
+  cursor: pointer;
 }
 #rest-ul li.active {
   font-weight: bolder;
@@ -899,7 +901,9 @@ ul.breadcrumb li a {
   display: block;
   font-size: 2.5rem;
   font-weight: 600;
+  padding-bottom: 10px;
 }
+
 .rest-foods {
   display: flex;
   flex-direction: column;
@@ -909,6 +913,9 @@ ul.breadcrumb li a {
 .rest-foods .rest-food {
   flex: 1;
   height: 14em;
+}
+.toprest-food {
+  padding-top: 10px;
 }
 .restmiddle-title {
   font-size: 1.3rem;
@@ -1472,3 +1479,11 @@ ul.breadcrumb li a {
     place-items: center;
   }
 }
+
+/* js */
+/* [data-tab-content] {
+  display: none;
+} */
+/* .active[data-tab-content] {
+  display: block;
+} */

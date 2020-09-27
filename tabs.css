@@ -1,0 +1,17 @@
+.tabs .tab-header > div > i {
+  display: block;
+  margin-bottom: 5px;
+}
+.tabs .tab-header > div.active {
+  color: #00acee;
+}
+.tab-body > section {
+  position: absolute;
+  top: 2%;
+  opacity: 0;
+  transform: scale(0.9);
+}
+.tab-body > section.active {
+  opacity: 1;
+  transform: scale(1);
+}
