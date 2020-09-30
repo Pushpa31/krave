@@ -926,7 +926,7 @@ ul.breadcrumb li a {
   width: 23em;
   font-size: 0.85rem;
   margin-top: 10px;
-  font-weight: 600;
+
   font-family: "Lato", sans-serif;
   color: #787878;
 }
@@ -947,7 +947,10 @@ ul.breadcrumb li a {
 .rest-pdown {
   border-bottom: 2px solid rgb(189, 189, 189);
   display: block;
-  font-weight: bold;
+  font-weight: 600;
+}
+.rest-breakdown {
+  font-weight: 300;
 }
 #img-top {
   width: 5em;
